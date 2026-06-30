@@ -1,0 +1,30 @@
+[
+   {
+   "id":1,
+    "nombre":"Johhnie Walker Double Black",
+    "medida":"750 ml",
+    "precio":53900,
+    "imagen":"images/jw_double.jpeg"
+   },
+   {
+    "id":2,
+    "nombre":"John Dewar's 15 años",
+    "medida":"1000 ml",
+    "precio":63900,
+    "imagen": "images/Dewars15.jpeg"
+   },
+   {
+    "id": 3,
+    "nombre":"DV Catena Cabernet - Malbec",
+    "medida":"750 ml",
+    "precio":11900,
+    "imagen": "images/DV_CB_MB.jpeg"
+   },
+   {
+    "id": 4,
+    "nombre":"Luigi Bosca Malbec",
+    "medida":"750 ml",
+    "precio":13900,
+    "imagen": "images/Luigi_Bosca_Malbec.jpeg"
+   }
+]
