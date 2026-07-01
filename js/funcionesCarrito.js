@@ -8,16 +8,17 @@ export const agregarAlCarrito = (producto) => {
 
     guardarCarrito(carrito);//en el localStorage
     actualizarContador(carrito);//del localStorage 
-    mostrarMensaje("Producto agregado al carrito")  
+    mostrarMensaje("agregar", producto.nombre)  
 }
 
 export const eliminarProducto = (indice) => {
     const carrito = obtenerCarrito();//del localStorage
+    const nombreProducto = carrito[indice].nombre; // Guardo el nombre del producto para poder pasarlo en el mensaje de alerta
     carrito.splice(indice , 1);//splice encuentra el valor de indice en el array y eliminará lo que le doy como segundo argumento.
     
     guardarCarrito(carrito);
     actualizarContador(carrito);
-    mostrarMensaje("Producto eliminado del carrito")
+    mostrarMensaje("eliminar", nombreProducto)
 }
 
 export const vaciarCarrito = () => {

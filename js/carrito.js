@@ -1,5 +1,5 @@
 import { obtenerCarrito } from "./storage.js";
-import { actualizarContador } from "./ui.js";
+import { actualizarContador, mostrarMensaje } from "./ui.js";
 import { eliminarProducto, vaciarCarrito } from "./funcionesCarrito.js";
 
 const renderizarCarrito = () => {
@@ -61,12 +61,12 @@ const renderizarCarrito = () => {
     });
 
     const btnVaciar = document.createElement("button");
-    btnVaciar.classList.add("btn", "text-dark","btn-vaciar")
+    btnVaciar.classList.add("btn","btn-vaciar")
     btnVaciar.textContent = "Vaciar carrito";
 
-    btnVaciar.addEventListener("click", () => {
+    btnVaciar.addEventListener("click", async () => {
         // Opción de cancelar el vaciado .. funcion confirm.
-        const respuesta = confirm("Estás seguro de vaciar el carrito..?");
+        const respuesta = await mostrarMensaje('vaciar');
 
         // Si hay respuesta, vacía y renderiza.
         if (respuesta) {

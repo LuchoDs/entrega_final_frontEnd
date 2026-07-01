@@ -301,10 +301,16 @@ textarea {
     position: fixed;
     top: 12rem;
     right: .6rem;
-    background-color: rgb(113, 111, 111);
+    color: red;
+    background-color: rgb(255, 255, 255);
     font-size: 2.8rem;
     padding: .5rem;
-    border: .3rem solid black;
+    border: .3rem solid red;
+}
+
+.btn.btn-vaciar:hover {
+    background-color: rgb(89, 255, 18);
+    border: .3rem solid red;
 }
 
 /* -----------------------------------------------------------------*/
@@ -351,3 +357,35 @@ textarea {
         margin: 5rem 1rem 0;
     }
 }
+
+/* -----------------------------------------------------------------*/
+/*                      POSICION SweetAlerts                        */
+/* -----------------------------------------------------------------*/
+.configuracion-alerta {
+    margin-top: 4rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    width: 38rem;
+}
+
+.configuracion-alerta .swal2-html-container {
+    font-size: 0rem;  
+    margin-top:0; 
+    margin-bottom: 0;
+}
+
+.pos-icon .swal2-icon {
+    margin: 2rem auto 0;
+}
+
+.icono-atencion .swal2-icon {
+    color: red;
+    border-color: red;
+}
+
+.icono-atencion .swal2-icon.swal2-error .swal2-x-mark-line-left,
+.icono-atencion .swal2-icon.swal2-error .swal2-x-mark-line-right {
+    background-color: red;
+}
+
